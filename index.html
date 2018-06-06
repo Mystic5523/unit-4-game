@@ -5,60 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
-    <p>Intentionally Left Blank</p>
-    <div class="text-center" id="guesses">Target Number: <span id="target"></span></div></div>
-    <button id="btnClose1">&nbsp;</button>
-    <button id="btnClose2">&nbsp;</button>
-    <button id="btnClose3">&nbsp;</button>
-    <button id="btnClose4">&nbsp;</button>
+    <h1 id="title">Crystal Collector!</h1>
 
 
-    <!-- <script>
+    <section id="instructions">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific ammount of points to your total score.</p>
+        <p>You win the game by matching your total score to a random number, you lose the game if you total score goes above
+            the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </section>
 
-        var min = 19;
-        var max = 120;
-        var randomTarget = Math.floor(Math.random() * (max - min + 1)) + min;
-        console.log(randomTarget);
-        document.getElementById("target").textContent = randomTarget;
+    <div class="centered">
+        <div id="target">40</div>
+        <div id="winLosses">Wins:
+            <span id="wins">0</span>
+            <br>Losses:
+            <span id="losses">0</span>
+        </div>
+    </div>
+    <div class="clearfix"></div>
 
-       $(document).ready(function() {
-        $("#btnClose1")
-        .text("")
-        .append("<img src=assets/images/diamond.png width=100 height=100  />")
-        .button();
-        });
-
-        $(document).ready(function() {
-        $("#btnClose2")
-        .text("")
-        .append("<img src=assets/images/emerald.png width=100 height=100  />")
-        .button();
-        });
-
-        $(document).ready(function() {
-        $("#btnClose3")
-        .text("")
-        .append("<img src=assets/images/garnet.png width=100 height=100  />")
-        .button();
-        });
-
-        $(document).ready(function() {
-        $("#btnClose4")
-        .text("")
-        .append("<img src=assets/images/topaz.png width=100 height=100  />")
-        .button();
-        });
+    <div id="buttonGroup" class="centered">
+        <button id="diamond">&nbsp;</button>
+        <button id="emerald">&nbsp;</button>
+        <button id="garnet">&nbsp;</button>
+        <button id="topaz">&nbsp;</button>
+    </div>
 
 
+    <div id="scoreLabel" class="centered">Your total score is: </div>
+    <div id="playerScore" class="centered"><span id="score">0</span></div>
 
-
-    </script> -->
 
 </body>
 

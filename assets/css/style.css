@@ -1,12 +1,67 @@
-/* button
-{
-    background-image: url(../../assets/images/diamond.png);   
-    background-repeat: no-repeat; 
-    border: none;
+* {
+    box-sizing: border-box;
 
-} */
+}
+html, body {
+    margin: .2em;
+    padding: 0;
+    background-image: url(../../assets/images/congruent_pentagon/congruent_pentagon.png)
+}
 
-body
-{
-    padding: 20px;
+#title {
+    width: max-content;
+    background: orange;
+    color: white;
+    padding: .5em .1em .5em .1em;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+#instructions {
+    width: 400px;
+    background: lightcoral;
+    margin: 0 auto; 
+    font-size: 17px;
+}
+#target {
+    width: 100px;
+    padding: 1em;
+    text-align: center;
+    background: greenyellow;
+    float: left;
+    height: 100px;
+    width: 300px;
+    font-size: 30px;
+}
+#winLosses {
+    background: lightblue;
+    width: 90px;
+    float: left;
+    margin-left: .4em;
+    height: 100px;
+    padding: 1em;
+
+}
+#buttonGroup {
+    padding: 1em 0 1em 0;
+}
+#scoreLabel, #playerScore {
+    width: 300px;
+    margin-bottom: .4em;
+    background: teal;
+    color: white;
+}
+#playerScore {
+    height: 100px;
+}
+.centered {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    overflow: hidden;
 }
