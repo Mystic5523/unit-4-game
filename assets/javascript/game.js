@@ -80,11 +80,11 @@ $('#diamond').click(function() {
 
 $("#diamond")
 	.text("")
-	.append("<img src='../assets/images/diamond.png' width='80' height='80'  />")
+	.append("<img src='../../assets/images/diamond.png' width='80' height='80'  />")
 
 $("#emerald")
 	.text("")
-	.append("<img src='../assets/images/emerald.png' width='80' height='80'  />")
+	.append("<img src='../../assets/images/emerald.png' width='80' height='80'  />")
 
 $("#garnet")
 	.text("")
